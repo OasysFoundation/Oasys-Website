@@ -14,14 +14,10 @@ h6 {
 
 header.masthead {
   position: relative;
-  background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #000000;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  min-height: 550px;
 }
 
 header.masthead .overlay {
@@ -38,6 +34,36 @@ header.masthead h1 {
   font-size: 2rem;
 }
 
+header.masthead {
+  z-index: 100;
+  position: relative;
+}
+
+.hero_image {
+  width: 100%;
+  height: auto;
+  text-align: right;
+}
+
+.hero_image img {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  max-width: 70%;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-height:200px;
+}
+
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 12rem;
@@ -47,6 +73,16 @@ header.masthead h1 {
     font-size: 3rem;
   }
 }
+
+@media (max-width: 768px) {
+  .hero_image img {
+    display: none;
+  }
+  .logo {
+    max-height:120px;
+  }
+}
+
 
 .showcase .showcase-text {
   padding: 3rem;
@@ -123,4 +159,8 @@ header.masthead h1 {
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.navbar-toggle, .icon-bar {
+    border:1px solid orange;
 }
