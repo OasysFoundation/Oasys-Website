@@ -6,11 +6,57 @@ html,body {
 
 #particles-js {
   position: absolute;
+  background-color: #07575b;
   z-index: -50;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+}
+.rz-small-margin{
+ margin-right: 20em;
+ margin-left: 20em;
+ border-color: #07575b;
+}
+.rz-no-border{
+  padding-top: 3em;
+}
+
+.rz-zero-border{
+  padding-top: 0em;
+}
+
+.rz-no-bottom{
+  padding-bottom: 3em;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 5em;
+    height: 5em;
+    padding-top: 0;
+}
+
+.rz-font{
+font-family: 'Open Sans', sans-serif;
+}
+
+.rz-fontsize-sm{
+font-family: 'Open Sans', sans-serif;
+font-size: 1.0em; 
+}
+
+.rz-fontsize-lg{
+font-family: 'Open Sans', sans-serif;
+font-size: 1.5em; 
+}
+
+.rz-navbar{
+font-size: 1.2em;
+list-style-type: none;
+}
+.showcase{
+background-color: #ffffff;
 }
 
 .svg {
@@ -28,4 +74,32 @@ svg:hover path {
     fill: blue;
 }
 
+.scrolled{
+  background:#66a5ad;
+}
+
+.button1 {
+  background-color: #ffffff;
+  margin:0;
+  border-color: #ffffff;
+  color: #000000;
+  } /* Green */
+
+.button1:hover{
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.button2 {
+  background-color: #000000;
+  margin:0;
+  border-color: #000000;
+  color: #ffffff;
+  } /* Green */
+
+.button2:hover{
+  background-color: #66a5ad;
+  border-color: #66a5ad;
+  color:#000000;
+}
 
