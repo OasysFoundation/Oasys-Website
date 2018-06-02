@@ -411,13 +411,11 @@
 });
 
   $(".navbar").on("show.bs.collapse", function(e) {
-  console.log("open")
-  $(".navbar-light").css("background-color", "#66a5ad");
+  $('nav').toggleClass('scrolled');
 });
 
 $(".navbar").on("hide.bs.collapse", function(e) {
-  console.log("close")
-  $(".navbar-light").css("background-color", "none");
+  $('nav').toggleClass('scrolled',false);
 });
 
 </script>
