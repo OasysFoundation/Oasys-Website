@@ -150,7 +150,7 @@
             <h2 class="section-heading">What We Do</h2>
             <hr class="light my-4 rz-small-margin">
             <p class="text-faded mb-4"> 
-             We are creating a global community of teachers, students, and professionals who want to improve educational content. The Oasys platform provides authoring tools that allows anyone to create or improve educational content, no coding experience required! We scale Oasys by combining our authoring tools with Artificial Intelligence and the Blockchain.
+             We are creating a global community of teachers, students, and professionals who want to improve educational content. The Oasys platform provides authoring tools that allow anyone to create or improve educational content, no coding experience required! We scale Oasys by combining our authoring tools with Artificial Intelligence and the Blockchain.
           </div>
         </div>
       </div>
@@ -409,6 +409,17 @@
   $(window).scroll(function(){
   $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
 });
+
+  $(".navbar").on("show.bs.collapse", function(e) {
+  console.log("open")
+  $(".navbar-light").css("background-color", "#66a5ad");
+});
+
+$(".navbar").on("hide.bs.collapse", function(e) {
+  console.log("close")
+  $(".navbar-light").css("background-color", "none");
+});
+
 </script>
 
 <script type="text/javascript">
