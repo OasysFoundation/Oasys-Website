@@ -4,6 +4,14 @@ html,body {
   background: black;
 }
 
+*[id]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
+}
+
 #particles-js {
   position: absolute;
   background-color: #07575b;
