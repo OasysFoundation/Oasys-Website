@@ -104,20 +104,23 @@
         <div class="row h-100">
           <div class="col-lg-7 my-auto">
             <!--<img class="logo" src="./img/oasys_logo_transparent.png">-->
-            <h1 align="left" class="mb-5 rz-font rz-fontsize-lg text-white">Oasys Education</h1>
-            <h3 align="left" class="mb-5 rz-font rz-fontsize-lg text-white">Where a Community of Teachers, Students, and Professionals Come to Create Quality Educational Content </h3>
+            <h1 align="left" class="text-center mb-5 rz-font rz-fontsize-lg text-white">Oasys Education</h1>
+            <h3 align="left" class="text-center mb-5 rz-font rz-fontsize-lg text-white">Where a Community of Teachers, Students, and Professionals Come to Create Quality Educational Content </h3>
            
             <div class="form-row mx-auto">
-              <div class="col-10 col-md-5 mb-2">
+              <div class="mx-auto col-10 col-md-5 mb-2">
                 <form action="https://interactivelearning.us12.list-manage.com/subscribe/post?u=41cb0bc0776297ab2392d8c32&amp;id=0453f47daf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <button type="submit" class="btn btn-block btn-lg btn-primary button1">Create Content! </button>
                 </form>
             </div>
-            <div class="col-10 col-md-5 mb-2">
+            <div class="col-10 col-md-5 mb-2 mx-auto">
               <a href="https://t.me/joinoasys" class="tn btn-block btn-lg btn-primary button1" role="button">Join our Telegram!</a>
 <!--               <button type="submit" class="btn btn-block btn-lg btn-primary button1">Join our Telegram! </button>
  -->            </div>
-
+              <br>
+              <br>
+              <br>
+              <br>
               </div>
 
               </div>
@@ -412,6 +415,15 @@
 $('.nav-link').on('click',function() {
   $('.navbar-collapse').collapse('hide');
 });
+
+  $(".navbar").on("show.bs.collapse", function(e) {
+  $('nav').toggleClass('scrolled',$(this).scrollTop() <= 50);
+});
+
+$(".navbar").on("hide.bs.collapse", function(e) {
+  $('nav').toggleClass('scrolled',$(this).scrollTop() <= 50,false);
+});
+
 
 </script>
 
