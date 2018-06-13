@@ -54,11 +54,6 @@ font-family: 'Open Sans', sans-serif;
 font-size: 1.0em; 
 }
 
-.rz-fontsize-lg{
-font-family: 'Open Sans', sans-serif;
-font-size: 1.5em; 
-}
-
 .rz-navbar{
 font-size: 1.2em;
 list-style-type: none;
@@ -91,10 +86,10 @@ svg:hover path {
   margin:0;
   border-color: #ffffff;
   color: #000000;
-  } /* Green */
+  } 
 
 .button1:hover{
-  background-color: #000000;
+  background-color: #66a5ad;
   border-color: #000000;
 }
 
@@ -111,3 +106,6 @@ svg:hover path {
   color:#000000;
 }
 
+.h2, h2 {
+    font-size: 2.5rem;
+}
