@@ -51,7 +51,7 @@
       <div class="container">
         <a class="navbar-brand js-scroll-trigger text-white" href="#page-top"><img height="50px" src="./img/oasys_logo_transparent.png"> </a>
 
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" id="navbarCheck">
           <span class="navbar-toggler-icon"></span>
         </button>
         
@@ -80,19 +80,21 @@
               <a class="nav-link rz-fontsize-sm rz-font text-white" height="50px" href="#invest" >Invest</a>
             </li> 
             <ul class="navbar-nav ml-auto">
+              <div class="row h-100 mx-auto">
 
-            <li class="nav-item">
-              <a class="nav-link text-white" height="50px" href="https://github.com/OasysFoundation" target="_blank"><i class="fa fa-github fa-2x"></i> </a>
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link text-white" href="https://twitter.com/OasysOrg" target="_blank"><i class="fa fa-twitter fa-2x"></i> </a>
-            </li>            
-            <li class="nav-item">
-              <a class="nav-link text-white" href="https://t.me/joinoasys" target="_blank"><i class="fa fa-telegram fa-2x"></i> </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="https://medium.com/@oasysorg" target="_blank"><i class="fa fa-medium fa-2x"></i> </a>
-            </li>            
+                <li class="nav-item col-3">
+                  <a class="nav-link text-white" height="50px" href="https://github.com/OasysFoundation" target="_blank"><i class="fa fa-github fa-2x"></i> </a>
+                </li> 
+                <li class="nav-item col-3">
+                  <a class="nav-link text-white" href="https://twitter.com/OasysOrg" target="_blank"><i class="fa fa-twitter fa-2x"></i> </a>
+                </li>            
+                <li class="nav-item col-3">
+                  <a class="nav-link text-white" href="https://t.me/joinoasys" target="_blank"><i class="fa fa-telegram fa-2x"></i> </a>
+                </li>
+                <li class="nav-item col-3">
+                  <a class="nav-link text-white" href="https://medium.com/@oasysorg" target="_blank"><i class="fa fa-medium fa-2x"></i> </a>
+                </li> 
+              </div>           
           </ul>
         </div>
       </div>
@@ -112,7 +114,7 @@
             <div class="form-row mx-auto">
               <div class="mx-auto col-10 mb-2">
                 <form action="https://interactivelearning.us12.list-manage.com/subscribe/post?u=41cb0bc0776297ab2392d8c32&amp;id=0453f47daf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <button type="submit" class="btn btn-block btn-lg btn-primary button1">Be a part of the Oasys Project</button>
+                <button type="submit" class="btn btn-block btn-lg btn-primary button1 pl-0 pr-0 mx-auto">Be a part of Oasys </button>
                 </form>
             </div>
             <div class="col-10 col-md-5 mb-2 mx-auto">
@@ -183,7 +185,7 @@
               	<img src="img/brain.svg" class="svg m-auto" width=2em>
               </div>
               <h3>Incentivize Content Creation</h3>
-              <p class="lead mb-0">Our deep learning models estimate the value each piece of educational content brings to the platform. Our trustless blockchain integrations record and distribute rewards for valuable contributions</p>
+              <p class="lead mb-0">Our deep learning models estimate the value each piece of educational content brings to the platform. Our trustless blockchain integrations record and distribute rewards for valuable contributions.</p>
             </div>
           </div>
           <div class="col-lg-4">
@@ -192,7 +194,7 @@
               	<img src="img/blockchain1.png" class="svg m-auto" width=2em>
               </div>
               <h3>Engage Students</h3>
-              <p class="lead mb-0">We personalize students content with adaptive paths</p>
+              <p class="lead mb-0">We personalize students content with adaptive paths.</p>
           </div>
          </div>
         </div>
@@ -401,7 +403,7 @@
                 <form action="https://interactivelearning.us12.list-manage.com/subscribe/post?u=41cb0bc0776297ab2392d8c32&amp;id=0453f47daf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                   <br>
                   <br>
-                <button type="submit" class="btn btn-block btn-lg btn-primary button2">Join Investor Mailing List </button>
+                <button type="submit" class="btn btn-block btn-lg btn-primary button2 pl-0 pr-0 mx-auto">Join Investor Mailing List </button>
                 </form>
             </div>
           </div>
@@ -413,8 +415,21 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript">
+  
+function checkState(){
+  if (($(this).scrollTop() > 50)){
+    return true;
+  }
+  else if((($("#navbarCheck").attr("aria-expanded")) == 'true')){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
   $(window).scroll(function(){
-  $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+  $('nav').toggleClass('scrolled', checkState());
 });
 
 $('.nav-link').on('click',function() {
