@@ -4,14 +4,6 @@ html,body {
   background: black;
 }
 
-*[id]:before { 
-  display: block; 
-  content: " "; 
-  margin-top: -75px; 
-  height: 75px; 
-  visibility: hidden; 
-}
-
 #particles-js {
   position: absolute;
   background-color: #07575b;
@@ -22,26 +14,28 @@ html,body {
   left: 0;
 }
 .rz-small-margin{
- margin-right: 20em;
- margin-left: 20em;
+ margin-right: 20rem;
+ margin-left: 20rem;
  border-color: #07575b;
 }
 .rz-no-border{
-  padding-top: 3em;
+  padding-top: 7em;
+  padding-bottom: 7em;
 }
 
-.rz-zero-border{
+.rz-no-border-special-1{
   padding-top: 0em;
+  padding-bottom: 7em;
 }
-
-.rz-no-bottom{
-  padding-bottom: 3em;
+.rz-no-border-special-2{
+  padding-top: 7em;
+  padding-bottom: 2em;
 }
 
 .navbar-brand,
 .navbar-nav li a {
-    line-height: 4em;
-    height: 4em;
+    line-height: 4rem;
+    height: 4rem;
     padding-top: 0;
 }
 
